@@ -22,6 +22,10 @@ let result  = mean2(2);
 1.5
 ```
 
+## Related
+
+- [zames](https://github.com/coderaiser/zames "zames") - converts callback-based functions to Promises and apply currying to arguments
+
 ## License
 
 MIT

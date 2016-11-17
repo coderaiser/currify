@@ -11,13 +11,13 @@ npm i currify --save
 ## How to use?
 
 ```js
-let currify = require('currify');
+const currify = require('currify');
 
-let mean    = (a, b, c) => (a + b) / c;
-let mean1   = currify(mean, 1);
-let mean2   = mean1(2);
-let result  = mean2(2);
+const mean = (a, b, c) => (a + b) / c;
+const mean1 = currify(mean, 1);
+const mean2 = mean1(2);
 
+mean2(2);
 // returns
 1.5
 ```

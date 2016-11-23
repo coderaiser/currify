@@ -35,7 +35,7 @@ module.exports = function currify(fn) {
     const count = fn.length - arguments.length;
     const func = f(again)[count];
     
-    return func;
+    return func || again;
 }
 
 function check(fn) {

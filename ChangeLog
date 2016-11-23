@@ -1,3 +1,9 @@
+2016.11.23, v2.0.2
+
+fix:
+- (currify) when to much function.length use default
+
+
 2016.11.23, v2.0.1
 
 fix:

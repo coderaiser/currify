@@ -11,6 +11,12 @@ const f = (fn) => [
     },
     function(a, b, c) {
         return fn(...arguments);
+    },
+    function(a, b, c, d) {
+        return fn(...arguments);
+    },
+    function(a, b, c, d, e) {
+        return fn(...arguments);
     }
 ];
 

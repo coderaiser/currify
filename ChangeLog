@@ -1,3 +1,9 @@
+2016.11.23, v2.0.1
+
+fix:
+- (currify) add support of 4 and 5 arguments
+
+
 2016.11.23, v2.0.0
 
 feature:

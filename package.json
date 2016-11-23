@@ -5,6 +5,7 @@
   "main": "lib/currify.js",
   "scripts": {
     "test": "tape test/*.js",
+    "coverage": "nyc npm test",
     "lint": "eslint lib test",
     "build": "redrun clean 6to5 legacy:* bundle bundle minify",
     "minify": "minify dist/currify.js > dist/currify.min.js",
@@ -44,6 +45,7 @@
     "eslint": "^3.10.2",
     "minify": "^2.0.13",
     "nodemon": "^1.11.0",
+    "nyc": "^10.0.0",
     "redrun": "^5.0.1",
     "rimraf": "^2.4.3",
     "tape": "^4.2.0"

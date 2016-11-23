@@ -71,7 +71,7 @@ test('function.length: 4', t => {
     
     const sum = (f) => {
         if (f.length === 4)
-            return f(2, 3, 0, 0 )
+            return f(2, 3, 0, 0)
         
         if (f.length === 1)
             return f();
@@ -80,6 +80,20 @@ test('function.length: 4', t => {
     const result = sum(fn(1));
     
     t.equal(result, 6, 'shold return result');
+    
+    t.end();
+});
+
+test('function.length: 6', t => {
+    const fn = currify((a, b, c, d, e, f, g) => {
+        return a + b + c + d + e + f + g;
+    });
+    
+    const sum = (f) => {
+        t.equal(f.length, 0, 'should set f.length to 0');
+    };
+    
+    const result = sum(fn(1));
     
     t.end();
 });

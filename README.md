@@ -22,6 +22,14 @@ mean2(2);
 1.5
 ```
 
+## Environments
+
+In old `node.js` environments that not fully supports `es2015`, `currify` could be used with:
+
+```js
+var currify = require('currify/legacy');
+```
+
 ## Related
 
 - [zames](https://github.com/coderaiser/zames "zames") - converts callback-based functions to Promises and apply currying to arguments

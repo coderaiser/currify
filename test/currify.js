@@ -1,6 +1,6 @@
 'use strict';
 
-const currify = require('../src/currify');
+const currify = require('..');
 const test = require('tape');
 
 test('should call function', t => {

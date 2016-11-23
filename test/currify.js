@@ -24,7 +24,7 @@ test('call returned function', t => {
     t.end();
 });
 
-test('call function with varius arguments count', t => {
+test('function.length: 3', t => {
     const fn = currify((a, b, c) => {
         return a + b + c;
     });
@@ -44,6 +44,26 @@ test('call function with varius arguments count', t => {
     t.end();
 });
 
+test('function.length: 4', t => {
+    const fn = currify((a, b, c, d) => {
+        return a + b + c + d;
+    });
+    
+    const sum = (f) => {
+        if (f.length === 2)
+            return f(2, 3)
+        
+        if (f.length === 1)
+            return f();
+    };
+    
+    const result = sum(fn(1, 0));
+    
+    t.equal(result, 6, 'shold return result');
+    
+    t.end();
+});
+
 test('no arguments', t => {
     t.throws(currify, /fn should be function!/, 'should throw when no fn');
     t.end();
@@ -55,3 +75,4 @@ test('arguments: wrong type', t => {
     t.throws(fn, /fn should be function/, 'shoud throw when wrong type');
     t.end();
 });
+

@@ -84,20 +84,6 @@ test('function.length: 4', t => {
     t.end();
 });
 
-test('function.length: 6', t => {
-    const fn = currify((a, b, c, d, e, f, g) => {
-        return a + b + c + d + e + f + g;
-    });
-    
-    const sum = (f) => {
-        t.equal(f.length, 0, 'should set f.length to 0');
-    };
-    
-    const result = sum(fn(1));
-    
-    t.end();
-});
-
 test('no arguments', t => {
     t.throws(currify, /fn should be function!/, 'should throw when no fn');
     t.end();

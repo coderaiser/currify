@@ -1,3 +1,10 @@
+2017.05.23, v2.0.4
+
+feature:
+- (currify) rm tail
+- (package) browserify v14.0.0
+
+
 2016.12.05, v2.0.3
 
 fix:

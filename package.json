@@ -1,6 +1,6 @@
 {
   "name": "currify",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "translate the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single or more arguments",
   "main": "lib/currify.js",
   "scripts": {

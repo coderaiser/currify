@@ -2,7 +2,9 @@
 'use strict';
 
 var f = function f(fn) {
-    return [function (a) {
+    return [
+    /*eslint no-unused-vars: 0*/
+    function (a) {
         return fn.apply(undefined, arguments);
     }, function (a, b) {
         return fn.apply(undefined, arguments);

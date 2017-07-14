@@ -1,3 +1,15 @@
+2017.07.14, v2.0.5
+
+fix:
+- (package) legacy node versions support
+
+feature:
+- (package) minify v3.0.0
+- (package) eslint v4.0.0
+- (package) nyc v11.0.2
+- (gitignore) add package-lock.json
+
+
 2017.05.23, v2.0.4
 
 feature:

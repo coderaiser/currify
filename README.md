@@ -32,6 +32,8 @@ var currify = require('currify/legacy');
 
 ## Related
 
+- [fullstore](https://github.com/coderaiser/fullstore "fullstore") - functional variables.
+
 - [zames](https://github.com/coderaiser/zames "zames") - converts callback-based functions to Promises and apply currying to arguments
 
 - [wraptile](https://github.com/coderaiser/wraptile "wraptile") - translate the evaluation of a function that takes multiple arguments into evaluating a sequence of 2 functions, each with a any count of arguments.

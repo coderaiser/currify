@@ -1,3 +1,20 @@
+2018.10.09, v3.0.0
+
+feature:
+- (package) eslint-plugin-node
+- (package) drop bundle support
+- (package) eslint v5.6.1
+- (currify) drop bower support
+- (package) nyc v13.0.1
+- (package) babel v7.0.0
+- (jshintrc) rm
+- (package) redrun v7.0.0
+- (package) redrun v6.0.0
+- (package) babel-preset-env v1.6.1
+- (package) browserify v16.0.0
+- (package) browserify v15.2.0
+
+
 2017.07.14, v2.0.6
 
 fix:

@@ -8,7 +8,7 @@
     "coverage": "nyc npm test",
     "lint": "eslint lib test",
     "build": "redrun clean 6to5 legacy:*",
-    "6to5": "babel -d legacy/lib lib",
+    "6to5": "babel -d legacy lib",
     "wisdom": "npm run build",
     "clean": "rimraf legacy/*",
     "watcher": "nodemon -w test -w lib --exec",
@@ -18,7 +18,7 @@
     "watch:coverage:base": "npm run watcher -- nyc npm test",
     "watch:coverage:tape": "npm run watcher -- nyc tape",
     "watch:coverage": "bin/redrun.js watch:coverage:base",
-    "legacy:index": "echo \"module.exports = require('./lib/currify');\" > legacy/index.js"
+    "legacy:index": "echo \"module.exports = require('./currify');\" > legacy/index.js"
   },
   "repository": {
     "type": "git",

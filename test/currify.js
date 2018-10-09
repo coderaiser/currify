@@ -84,6 +84,25 @@ test('function.length: 4', t => {
     t.end();
 });
 
+test('function.length: 5', t => {
+    const fn = currify((a, b, c, d, e, f) => {
+        return a + b + c + d + e + f;
+    });
+    
+    const sum = (f) => {
+        if (f.length === 5)
+            return f(2, 3, 0, 0, 1)
+        
+        if (f.length === 1)
+            return f();
+    };
+    
+    const result = sum(fn(1));
+    
+    t.equal(result, 7, 'shold return result');
+    t.end();
+});
+
 test('no arguments', t => {
     t.throws(currify, /fn should be function!/, 'should throw when no fn');
     t.end();

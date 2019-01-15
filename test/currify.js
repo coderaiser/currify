@@ -1,7 +1,7 @@
 'use strict';
 
 const currify = require('..');
-const test = require('tape');
+const test = require('supertape');
 
 test('should call function', t => {
     const fn = () => 'done';

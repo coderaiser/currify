@@ -22,14 +22,6 @@ mean2(2);
 1.5
 ```
 
-## Environments
-
-In old `node.js` environments that not fully supports `es2015`, `currify` could be used with:
-
-```js
-var currify = require('currify/legacy');
-```
-
 ## Related
 
 - [fullstore](https://github.com/coderaiser/fullstore "fullstore") - functional variables.

@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/coderaiser/currify",
   "devDependencies": {
+    "eslint": "^8.18.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^15.8.0",
     "madrun": "^7.0.4",
